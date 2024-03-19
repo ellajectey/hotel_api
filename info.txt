@@ -1,0 +1,40 @@
+npm init -y
+install express npm i express
+create an app or server file eg server.js
+listen on a particular port
+    app.listen(port, () =>{
+
+    console.log(`Express server is running on ${port}`);
+    // console.log("Express server is running on" + port); concatenation method
+
+});
+
+install nodedemon
+under main in package.json add the type as module
+make sure main is the same as the app's js file.
+under scripts add start:
+     nodedemon server.js
+create a dotenv file and import it in your server file
+    import dotenv from "dotenv";
+configure the dontenv  
+    const port = process.env.PORT || 8080
+create a variable  
+    const port =process.env.PORT || 8080
+
+to start the app do npm start
+create an array of objects with countries
+[
+{id: 1,
+name: Ghana,
+hasMoney:false
+}
+]
+
+import in the app .js
+
+app.get('/countries/:name' , (req,res) =>{
+    const name =req.params.name
+    console.log('idd', name)
+    // const foundData =countries.find(id)
+    res.send(countries);
+});
