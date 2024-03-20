@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import {router} from '../routes/allroutes.js'
 
 
-dotenv.config({path:[]});
+dotenv.config();
 
 const app =express();
 
@@ -14,7 +14,7 @@ app.use(router);
 const mongoUri=process.env.MONGO_URI;
 
 try {
-    await mongoose.connect(process.env.MONGO_URI)
+    await mongoose.connect(mongoUri)
 } catch (error) {
     console.log("database is connected")
 }
