@@ -12,7 +12,7 @@ guest's package
 guest's restaurant reservations id
 guest's card details
 
-name of room
+room number
 capacity of the room
 location of room
 price of room

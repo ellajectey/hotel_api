@@ -11,7 +11,7 @@ const app =express();
 app.use(express.json());
 app.use(router);
 
-const mongoUri=process.env.MONGO_URI;
+const mongoUri = process.env.MONGO_URI;
 
 try {
     await mongoose.connect(mongoUri)

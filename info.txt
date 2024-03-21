@@ -38,3 +38,26 @@ app.get('/countries/:name' , (req,res) =>{
     // const foundData =countries.find(id)
     res.send(countries);
 });
+
+{
+  "firstname": "Rofiat",
+  "lastname": "Mutalah",
+  "email": "rofiatmutalah@gmail.com",
+  "phone": "0551255490",
+  "password": "readyplayer1"
+ 
+}
+
+{
+  "roomnumber": "Aseda suite",
+  "roomcapacity": "5 with infinity pool",
+  "location": "Water front",
+  "price": "450",
+  "rating": "9",
+  
+  "image": {
+    
+    "name":"room405",
+    "description":"https://unsplash.com/photos/white-bed-linen-with-throw-pillows-Yrxr3bsPdS0"
+  }
+}
